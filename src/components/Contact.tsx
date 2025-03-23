@@ -64,7 +64,8 @@ const Contact = () => {
                             <p className="text-gray-500"></p>
                         </div>
                         <p className="mt-4 text-gray-600">
-                            Nous sommes situés au cœur de la ville, facilement accessible en transport en commun ou en voiture.
+                            Nous sommes situés à côté du Bar Tabac de Saint-Menet.
+                            Le magasin est accessible en transport en commun et il est possible de se garer à proximité.
                         </p>
                     </div>
                 </div>
