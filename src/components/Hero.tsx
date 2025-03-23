@@ -75,16 +75,16 @@ const Hero = () => {
 
         <section className="py-16 md:py-24 bg-gradient-to-br from-gray-50 to-gray-100">
             {/* Section points de vente officiels */}
-            <div className="mb-12 bg-white p-6 rounded-lg shadow-md max-w-3xl mx-auto border-l-4 border-purple-500">
+            <div className="mb-12 bg-white p-6 rounded-lg shadow-md max-w-3xl mx-auto border-l-4 border-purple-300">
                 <h3 className="text-xl font-bold mb-2 text-left">Points de vente officiels</h3>
-                <p className="text-gray-700 text-left">
+                <span className="text-gray-700 text-left">
                     Information importante : Le Paradis du Hobby dispose uniquement de deux canaux de vente officiels. Nous vous recommandons de vous procurer nos produits exclusivement via ces points de vente autorisés.
                     <ul className="list-disc list-inside">
                         <li>Notre <a href='#magasin' className="text-blue-600 underline hover:text-blue-800 font-medium"> boutique physique</a></li>
                         <li>Notre compte sur <a href="https://www.voggt.com/profiles/467765" target="_blank"
                                 rel="noopener noreferrer" className="text-blue-600 underline hover:text-blue-800 font-medium">Voggt</a>.</li>
                     </ul>
-                </p>
+                </span>
             </div>
 
             <div className="container mx-auto px-4 text-center">
@@ -105,9 +105,9 @@ const Hero = () => {
                             </svg>
                         </button>
 
-                        <div className="flex flex-wrap justify-center gap-8 mt-12 overflow-hidden transition-transform duration-300 ease-in-out">
+                        <div className="flex flex-wrap justify-center gap-8 mt-12 overflow-hidden transition-transform duration-300 ease-in-out w-full">
                             {visibleCards().map((card, index) => (
-                                <div key={index} className="bg-white p-6 rounded-lg shadow-md max-w-xs w-full">
+                                <div key={index} className="bg-white p-6 rounded-lg shadow-md max-w-xs w-full md:w-auto mx-auto">
                                     <div className="text-primary text-5xl mb-4">{card.icon}</div>
                                     <h3 className="text-xl font-semibold mb-2">{card.title}</h3>
                                     <p className="text-gray-600">{card.description}</p>
@@ -130,7 +130,7 @@ const Hero = () => {
                         {Array.from({ length: cardTypes.length - (windowWidth >= 768 ? 2 : 0) }).map((_, idx) => (
                             <button
                                 key={idx}
-                                className={`h-2 w-2 rounded-full ${currentIndex === idx ? 'bg-primary' : 'bg-gray-300'}`}
+                                className={`h-2 w-2 rounded-full ${currentIndex === idx ? 'bg-purple-300' : 'bg-gray-300'}`}
                                 onClick={() => setCurrentIndex(idx)}
                                 aria-label={`Aller à la carte ${idx + 1}`}
                             />

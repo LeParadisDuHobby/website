@@ -19,7 +19,7 @@ const Contact = () => {
                                 <div>
                                     <h4 className="font-medium">Adresse</h4>
                                     <p className="text-gray-600">
-                                        <a href="https://www.google.com/maps/dir//39+Av.+de+Saint+Menet,+13011+Marseille/@43.2892566,5.4160802,12z" target="_blank" rel="noopener noreferrer">
+                                        <a className="underline" href="https://www.google.com/maps/dir//39+Av.+de+Saint+Menet,+13011+Marseille/@43.2892566,5.4160802,12z" target="_blank" rel="noopener noreferrer">
                                             39 avenue de Saint Menet, 13011 Marseille
                                         </a>
                                     </p>
@@ -34,7 +34,7 @@ const Contact = () => {
                                 </div>
                                 <div>
                                     <h4 className="font-medium">Téléphone</h4>
-                                    <p className="text-gray-600"><a href="tel:+33491453986">04 91 45 39 86</a></p>
+                                    <p className="text-gray-600"><a href="tel:+33491453986" className="underline">04 91 45 39 86</a></p>
                                 </div>
                             </div>
 
@@ -60,8 +60,8 @@ const Contact = () => {
 
                     <div className="bg-gray-50 p-8 rounded-lg shadow-sm max-w-lg" id="magasin">
                         <h3 className="text-xl font-semibold mb-4">Notre magasin</h3>
-                        <div className="h-64 bg-gray-200 rounded-lg flex items-center justify-center">
-                            <p className="text-gray-500"></p>
+                        <div className="h-95 bg-gray-200 rounded-lg flex items-center justify-center overflow-hidden">
+                            <img src={"/boutique.jpeg"} alt="Le Paradis du Hobby" className="h-95 w-full object-cover rounded-lg" />
                         </div>
                         <p className="mt-4 text-gray-600">
                             Nous sommes situés à côté du Bar Tabac de Saint-Menet.
